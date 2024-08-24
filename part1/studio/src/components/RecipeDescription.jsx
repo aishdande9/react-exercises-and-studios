@@ -1,11 +1,12 @@
 import React from 'react';
-import RecipeAuthor from './components/Description.jsx';
+import RecipeAuthor from './Description.jsx';
 
 class RecipeDescription extends React.Component{
     render(){
         return(<div> 
             <div>
                <h1>vanilla infused pannacottawithpomegranateglaze</h1>
+               <p>An Italian dessert with silky smooth texture, slightly thickened custard like consistency</p>
                <ul>
 <li>Prepare panna cotta - in a medium saucepot combing cream, milk, sugar, and vanilla bean, whisking well to combine. Place over medium heat and bring to a slight boi,
      remove from heat. Whisk in gelatin until fully dissolved and the texture is silky smooth and slightly thickened. </li>
