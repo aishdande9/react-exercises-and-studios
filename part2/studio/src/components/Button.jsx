@@ -1,8 +1,15 @@
 
+import ClickedButton from "./ClickedButton";
 import SaveButton from "./SaveButton";
-function Button() {
-   return;
- }
+import React from "react";
+ import "./styling.css";
+
+
+function Button(props) {
+  return props.saveButton ? <SaveButton /> : <ClickedButton />;
+}
+ 
+ 
  
  export default Button;
  
