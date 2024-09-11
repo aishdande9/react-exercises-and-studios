@@ -1,4 +1,4 @@
-import './components/App.css'
+
 
 const RecipeAuthor = () => {
    let authorLink = "https://erickim.net/";
@@ -7,7 +7,7 @@ const RecipeAuthor = () => {
 
    return (
       <div>
-         <img src={authorPhoto} alt = "Eric Kim, chef, a young man in a kitchen preparing a plate from a tray of a dinner meal" style={{objectFit: "contain", borderRadius: "50%"}} />
+         <img src={authorPhoto} alt = "chef" style={{objectFit: "contain", borderRadius: "50%"}} />
          <div>
             <h3>{authorName}</h3>
             <a href={authorLink}>The Strawberry King!</a> 
@@ -56,10 +56,10 @@ const RecipePhoto = () => {
 export default function RecipeDisplay () {
    return(
       <div className="recipePhotoBlock">
+       
          <RecipePhoto />
-         <div>
-            <RecipeDescription />
-         </div>
+    
+         <RecipeDescription />
       </div>
    );
 }

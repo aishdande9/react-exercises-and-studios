@@ -5,7 +5,7 @@ export default function BoardAssignment() {
   let lateNightSnack = { label: "A Late Night Snack" };
   let brunch = { label: "Brunch" };
   const boards = [decadentDesserts, lateNightSnack, brunch];
-  const [boardName, setName] = useState(boards[0]);
+  const [boardName, setName] = useState('no boards yet!');
 
   const handleChange = (event) => {
     setName(event.target.value);
@@ -16,7 +16,7 @@ export default function BoardAssignment() {
       <label>Save to Board: </label>
       <select value={boardName} onChange={handleChange}>
         {boards.map((data,id) => 
-          <option value = {data} key={id}>{data.label}</option>
+          <option value = {data.label} key={id}>{data.label}</option>
         )}
       </select>
 
